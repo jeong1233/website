@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/***반응형 웹뷰***/
+.panel,.mCon02Menu04,.mMainCon03,.mCopy{
+	display: none;
+/*여기 적고 모바일에 따로 명명 안하면 모바일에도 먹음. 반드시 모바일에도 따로 줘야 함*/
+}
+
+/***모바일뷰***/
+@media screen and (max-width:768px){
+	body{
+		min-width: 100%;
+	}
+	.gnb,.utill,.mainCon01,.con02Menu04,.con02 a:hover p,.mainCon03,.con04 p,.fLogo{
+		display: none;
+	}	
+	.inner{
+		width: 100%;
+	}
+	
+	/**헤더**/
+	#header{
+		position: relative;
+		height: auto;
+		line-height: normal; /*자식들 가진 값으로 세팅. 초기화X*/
+		margin: 10px 20px;
+	}
+	#header h1{
+		position: static;
+		width: 70px;
+		height: 40px;
+		background: url(../images/sp_com_s.png) no-repeat -10px 0;
+	}
+	.panel{
+		display: block;
+    	position: absolute;
+		top: 50%;
+		margin-top: -8px;
+		right: 0;
+	}
+	.panel a:before, .panel span, .panel a:after{
+		content: "";
+		display: block;
+		width: 20px;
+		height: 2px;
+		background: #333;
+	}
+	.panel a:after{
+		width: 15px;
+	}
+	.panel span{
+		margin: 5px 0;
+		text-indent: -9999px;
+	}
+
+	/**container**/
+	/*mainSlider*/
+	.mainSlider{
+		margin: 0;
+		height: 350px;
+		background: url(../images/main_img.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	.mainSlider img{
+		display: none;
+		/*기존 이미지 불러온 거 삭제하고 배경으로 넣음*/
+	}
+	.slideText{
+		font-size: 14px;
+		margin-top: -35px;
+	}
+	.slideText span{
+		font-size:	11px;    
+	}
+
+	.slideBtn{
+		width:13px;
+		height: 23px;
+		background: url(../images/sp_com_s.png) no-repeat;
+		margin-top: -12px;
+	}
+	.leftBtn{
+		background-position: -73px -40px;
+		left: 10px;
+	}
+	.rightBtn{
+		background-position: -88px -40px;
+		right:	10px;
+	}
+	
+	/*빠른메뉴아이콘*/
+	.menuIcon{
+		overflow: hidden;
+		padding: 5px 0;
+	}
+	.menuIcon li{
+		float: left;
+		width: 33.33%;
+		padding: 10px 0;
+	}
+	.menuIcon span{
+		width: 33px;
+		height: 33px;
+		background: url(../images/sp_com_s.png) no-repeat;
+		margin-bottom: 0;
+		margin: 0 auto;
+	}
+	.menuIcon p{
+		font-size: 12px;
+	}
+	.menuIcon li:hover p{
+		color: #333;
+	}
+	.menuIcon .icon01{
+		background-position: -11px -65px;
+	}
+	.menuIcon li:hover .icon01{
+		background-position: -11px -65px;
+	}
+	.menuIcon .icon02{
+		background-position: -47px -65px;
+	}
+	.menuIcon li:hover .icon02{
+		background-position: -47px -65px;
+	}
+	.menuIcon .icon03{
+		background-position: -84px -65px;
+	}
+	.menuIcon li:hover .icon03{
+		background-position: -84px -65px;
+	}
+	.menuIcon .icon04{
+		background-position: -118px -65px;
+	}
+	.menuIcon li:hover .icon04{
+		background-position: -118px -65px;
+	}
+	.menuIcon .icon05{
+		background-position: -155px -66px;
+	}
+	.menuIcon li:hover .icon05{
+		background-position: -155px -66px;
+	}
+	.menuIcon .icon06{
+		background-position: -190px -66px;
+	}
+	.menuIcon li:hover .icon06{
+		background-position: -190px -66px;
+	}
+	
+	/*mainCon02*/
+	.mainCon02{
+		padding: 10px;
+		padding-bottom: 0;
+	}
+	.con02{
+		width: calc(50% - 5px);
+		height: auto;  /*기본값으로 적용. width 50퍼 됨에 따라 높이 auto 안주면 이미지 왜곡됨*/
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.con02:nth-child(2n){
+		margin-right: 0;
+	}
+	.con02 a{
+		padding: 45% 0;
+	}
+	.con02 a:hover{
+		background: none;
+	}
+	.con02 h3{
+		font-size: 16px;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	.con02Menu02 a:hover h3{
+		color: #000;
+	}
+	.mCon02Menu04{
+		display: block;
+		margin-right: 0;
+		padding: 0;
+		background: #2d5b79;
+	}
+	
+	/*mMainCon03*/
+	.mMainCon03{
+		display: block;
+		padding: 0 10px;
+	}
+	.mMainCon03 dl{
+	background: #f2f0ed;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 3% 0;
+	margin-bottom: 10px;
+	}
+	.mMainCon03 dt{
+		width: 20%;
+		float: left;
+		text-indent: 10px;
+		color: #2D5B79;
+	}
+	.mMainCon03 dd{
+		width: 80%; 
+		float: left;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.mMainCon03 a{
+		color: #000;
+	}
+	
+	/*mainCon04*/
+	.mainCon04{
+		padding: 20px 10px;
+		padding-bottom: 10px;
+	}
+	.con04{
+		width: calc(50% - 5px);
+		height: auto;
+		margin-right: 10px;
+		background-size: 100% 100%;
+		margin-bottom: 10px;
+	}
+	.con04:nth-child(2n){
+		margin-right: 0;
+	}
+	.con04 h3{
+		padding-top: 0;
+		font-size: 14px;
+	}
+	.con04 a{
+		padding: 80% 0 10% 0;
+	/*사각형 전체 클릭 가능하도록 하려고 a에 패딩*/
+	}
+	
+	/**footer**/
+	.footerTop{
+		height: auto;
+		line-height: normal;
+		text-align: center;
+	}
+	.fMenu{
+		width: 100%;
+		line-height: 30px;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	.fMenu li{
+		float: none;
+		display: inline-block;
+	}
+	.fMenu li:last-child:after,.footerInfo{
+		display: none;
+	}
+	.footerCs .csNum,.footerCs span{
+		font-size: 13px;
+	}
+	.footerTopR{
+		float: none;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.footerTopR div{
+		height: 40px;
+		line-height: 40px;
+	}
+	.familySite{
+		width: auto;
+		padding-right: 30px;
+		font-size: 13px;
+	}
+	.mFooterInfo{
+		display: block;
+		color: #fff;
+		font-size: 11px;
+		font-weight: bold;
+		line-height: 60px;
+		text-align: center;
+	}
+}
