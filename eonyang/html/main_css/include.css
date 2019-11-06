@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*****header*****/
+#header{
+    margin-bottom: 15px;
+}
+#header .inner{
+	position: relative;
+}
+
+/**headerTop**/
+.headerTop{
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+.utill{
+	float: left;
+	margin: 5px 0;
+}
+.utill li{
+    float: left;
+    font-size: 12px;
+}
+.utill a{
+    color: #cecece;
+}
+.utill li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #cecece;
+    margin: 0 13px;
+    vertical-align: middle;
+}
+.utill li:last-child:after{
+	display: none;
+}
+.utill li:last-child{
+	margin-right: 27px;
+}
+
+.searchBox{
+	float: left;
+	text-align: right;
+
+/*공백:부모-자식. 붙여쓰기:형제.-->근데 차라리 ul class 불러와서 부모 자식으로 처리하는 게 더 나음
+.headerTop li.searchBox < .headerTop .searchBox*/
+}
+.searchBox input{
+	float: left;
+	height: 18px; 
+	font-size: 10px;
+	text-indent: 8px;
+	padding: 2px;
+}
+
+/**headerBottom**/
+.headerBottom{
+	padding-top: 58px;
+}
+/**로고**/
+#header h1{
+    float: left;
+}
+
+/**gnb**/
+.gnb{
+    float: right;
+	margin-top: 9px;
+}
+.gnb li{
+    float: left;
+    margin-left: 91px;
+}
+.gnb a{
+    font-size: 18px;
+}
+
+/*****footer*****/
+#footer{
+	margin: 50px 0;
+}
+
+/**footerTop**/
+.fTop{}
+.fTop li{
+	float: left;
+	font-size: 15px;
+	font-weight: 400;
+}
+.fTop li:after{
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 15px;
+	background: #333;
+	vertical-align: middle;
+	margin: 0 10px;
+}
+.fTop li:last-child:after{
+	display: none;
+}
+.fTop li a{
+	width: ;
+}
+
+/**footerBottom**/
+.fBottom{
+	margin-top: 20px;
+}
+.readingBtn{
+	padding: 5px;
+	float: right;
+	width: 200px;
+	font-size: 10px;
+	font-weight: 200;
+	text-indent: 5px;
+	border: 1px solid #555;
+}
+.readingBtn a{
+	display: block;
+}
+.readingBtn span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.readingBtn img{
+	width: 10px;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.fInfo{
+	float: left;
+	font-size: 13px;
+	font-weight: 200;
+	line-height: 23px;
+}
+
