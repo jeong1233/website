@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/****container*****/
+#container{}
+
+/**mainslider**/
+.mainSlider{
+	position: relative;
+}
+.mainSlider img{
+	width: 100%; /*모바일에선 width만 100퍼주면 화면사이즈 바뀌어도 비율맞춰서 알아서 사이즈 조절됨*/
+	display: block; /*공백없애려고*/
+}
+
+.sliderBtnL{
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+.sliderBtnL li{
+	width: 16px;
+	height: 16px;
+	background: url(../images/main/blet_visual.png) no-repeat;
+	text-indent: -9999px;
+	margin-right: 3px;
+	float: left;
+}
+.sliderBtnL li:first-child{
+	background-position: 0 -16px;
+}
+.sliderBtnL li a{}
+
+.sliderBtnR{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.sliderBtnR li{
+	width: 45px;
+	height: 45px;
+	background: url(../images/main/btn_visual_cnt.png) no-repeat;
+	text-indent: -9999px;
+	float: left;
+	margin-left: 1px;
+}
+.sliderBtnR li:nth-child(2){
+	background-position: -46px 0;
+}
+.sliderBtnR li:last-child{
+	background-position: -92px 0;
+}
+.slderBtnR li a{
+	display: block;
+}
+
+/*mainCon01*/
+.mainCon01{}
+.mainCon01 h2{
+	text-align: center;
+	margin: 20px 0;
+}
+.mainCon01 h2 img{
+	width: 150px;
+}
+
+.mainCon01 ul{}
+.mainCon01 li{
+	background-size: cover;
+	padding: 5%;
+	margin-top: 2px;
+}
+.con01Menu01{
+	background: url(../images/main/brandSite_img01.jpg) no-repeat center center;
+}
+.con01Menu02{
+	background: url(../images/main/brandSite_img02.jpg) no-repeat center center;
+}
+.con01Menu03{
+	background: url(../images/main/brandSite_img03.jpg) no-repeat center center;
+}
+.mainCon01 li a{
+	color: #fff;
+}
+.mainCon01 li h3{
+	padding-top: 30%;
+}
+
+/*mainCon02*/
+.mainCon02{}
+.mainCon02 li{
+	width: calc(50% - 1px);
+	float: left;
+	background: #1C97FE;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+.mainCon02 li:nth-child(2n){
+	margin-right: 0;
+}
+.mainCon02 li a{}
+.mainCon02 li img{
+	width: 100%;
+	display: block; /*사진과 p태그 사이 공백 없애기.안하면 news 위 공백 더 커짐.*/
+}
+
+.con02Text{
+	color: #fff;
+	font-size: 12px;
+	padding: 5%;
+}
+.con02Text span{
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/*mainCon03*/
+.mainCon03{}
+.mainCon03 h2 img{
+	width: 170px;
+	display: block;
+	margin: 0 auto; /*블록일때!*/
+	margin: 15px auto; /*중간정렬 유지*/
+}
+
+.pdtList{}
+.pdtList a{
+	overflow: hidden;
+	display: flex;
+/*flex도 cf주는 것처럼 주려는 요소 바로 위 부모에게 줌. flex 쓰려면 하나의 display만 줌. display 블록이나 인라인이랑 같이 쓰일 수 없음.정렬요소->2개이상일 때 사용가능.*/
+}
+.pdtImg, .pdtText{
+	width: 50%;
+}
+.pdtImg{
+	position: relative;
+}
+.pdtImg img{
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	/*부모맞게 너무 커지는 거 방지*/
+	width: auto;
+	height: auto;
+	/*부모 사이즈 맞게 자동으로*/
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	/*가변화면에서 이미지 중간정렬하는 방법으로 위 내용 활용가능*/
+}
+.pdtText{
+	background: #f1f1f1;
+	padding: 20px;
+	box-sizing: border-box;
+	color: #333;
+}
+.pdtText p{
+	margin-top: 10px;
+	font-size: 11px;
+}

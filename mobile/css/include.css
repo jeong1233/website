@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/****header****/
+#header{
+}
+
+.hTop{
+	background: url(../images/common/bg_top.gif);
+/*header에 주면XX. gnb 포함돼있어서 배경따로줘야해니껜*/
+	height: 40px; /*반복이라 반드시 높이 설정. 뒤에 넣을 bg img 높이가 이거라서*/
+	position: relative;
+	padding-left: 10px;
+}
+.hTop h1{
+	width: 120px; /*h1 영역만 이렇게 된 거. 이것만 해놓으면 이미지 변형X*/
+	font-size: 0; /*h1 기본속성으로 font사이즈 있음.*/
+}
+.hTop h1 a{
+	display: block; /*링크걸려야하므로*/
+	line-height: 40px; /*height 해 놓으면 middle 안 먹음. 이걸 줘야 글자속성돼서 밑에 middle 먹음*/
+}
+.hTop h1 img{
+	width: 100%;  /*이미지 태그 내에 값 부모 가로값 받아야 변형O*/
+	vertical-align: middle; /*h1 아니라 img에 줘야함!*/
+}
+
+.panel{
+	width: 40px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #10509d;
+	overflow: hidden;
+}
+.panel a{
+	position: absolute;
+	width: 100%; /*absol 띄었을 때 중간정렬 하는 법. 이미 띄우기 전 중간 정렬 해놓음. 위에 설정한 가로값 상속*/
+	top: 50%;
+	margin-top: -8px;
+}
+.panel a:before, .panel span, .panel a:after{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #fff;
+	margin: 0 auto;
+}
+.panel span{
+	margin: 5px auto;
+	text-indent: -9999px;
+}
+
+/**panelMenu**/
+.panelBg{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+	z-index: 5;
+}
+.panelMenu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: #333;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition: width 1s;
+	overflow: hidden;
+}
+.panelMenu li{
+	width: 240px;
+	font-size: 18px;
+	font-weight: 500;
+	padding-left: 20px;
+	padding-top: 30px;
+}
+.panelMenu li a{
+	color: #fff;
+}
+.panelMenu .closeBtn{
+	font-size: 28px;
+}
+
+/*gnb*/
+.gnb{
+	background: url(../images/common/bg_gnb.gif);
+	height: 29px;
+}
+.gnb li{
+	width: 20%;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	line-height: 29px; /*gnb height 따라서*/
+	border-left: 1px solid #595959;
+	/*컬러값만 주는 거XXXX*/
+	border-right: 1px solid #363636;
+	box-sizing: border-box;
+	/*굳이 width calc 쓰는것보다 더 간편*/
+}
+.gnb li:first-child{
+	border-left: 0;
+}
+.gnb li:last-child{
+	border-right: 0;
+}
+.gnb li a{
+	color: #fff;
+}
+
+/****footer****/
+#footer{
+	background: url(../images/common/bg_footer_new.gif);
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.fBtn{
+	display: inline-block;
+	margin-top: 10px;
+}
+.fBtn li{
+	float: left;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin: 0 5px;
+}
+.fBtn li a{
+	color: #fff;
+}
