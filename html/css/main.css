@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/******container********/
+#container{
+}
+
+/***mainBanner***/
+.mainBanner{
+	background: url(../images/mainBanner.png) no-repeat center center;
+	background-size: cover;
+	height: 731px;
+	position: relative;
+}
+.mainBanner h1{
+	font-family: "NanumMyeongjo", sans-serif;
+	font-weight: 700;
+	font-size: 45px;
+	padding-top: 80px;
+	text-align: center;
+}
+
+.mText{
+	background: url(../images/textBox.png) no-repeat center center;
+	height: 200px;
+	margin: 20px 0;
+	text-align: center;
+	font-family: "NanumMyeongjo", sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+}
+.mText li{
+	padding-top: 16px;
+	padding-left: 26px;
+}
+
+.playBtn{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -30px;
+}
+.playBtn li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	text-indent: -9999px;
+	margin-right: 5px;
+}
+.playBtn li:first-child{
+	background: #fff;
+}
+
+/****추천메뉴****/
+.rMenu{
+	margin: 40px 10px;
+	text-align: center;
+}
+.rMenu dt{
+	text-align: center;
+	font-family: "NanumMyeongjo", sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	letter-spacing: 3px;
+	position: relative;
+}
+.rMenu dt span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-family: 'NotoSans', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: normal;
+}
+.rMenu span img{
+	width: 10px;
+}
+.rMenu dd{
+	display: inline-block;
+	margin-top: 12%;
+	margin-left: 25%;
+	text-align: center;
+}
+.rMenu dd span{
+	display: block;
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 16px;
+}
+.rMenu .menu01{
+    margin-left: 0;
+	margin-top: 63px;
+}
+.menu01 img{
+	width: 80px;
+}
+.menu02 img{
+	width: 80px;
+}
+
+/***브랜드소개***/
+.brandInfo{
+	background: #F6F7F8; 
+	height: 315px; 
+	padding: 30px 10px;
+	font-family: 'NanumMyeongjo', sans-serif;
+}
+.brandInfo li{
+	line-height: 30px;
+	font-weight: 900;
+}
+.brandInfo .infoText{
+	display: inline-block;
+	font-size: 17px;
+	float: right;
+	padding-top: 7%;
+}
+.brandInfo .infoText p{
+	padding-top: 15px;
+}
+.brandInfo .infoText .text01{
+	padding-top: 0;
+}
+.brandInfo .infoTitle{
+	float: left;
+	line-height: 40px;
+	font-size:25px;
+}
+.infoTitle p{
+	color: #F46606;
+}
+
+/***매장찾기***/
+.store{
+	background: url(../images/storeBg.png) no-repeat center center;
+	background-size: cover;
+	padding: 0 10px;
+	color: #fff;
+	padding-bottom: 45px;
+}
+.store dt{
+	font-family: 'NanumMyeongjo', sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 45px 0;
+}
+.store dd{
+	border: 2px solid #fff;
+	height: 35px;
+	line-height: 35px;
+	text-indent: 13px;
+	position: relative;
+}
+.store dd p{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 200;
+}
+.store dd img{
+	width: 23px;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	right: 15px;
+}
+
+/***가맹점문의***/
+.franchise{
+	background: #F6F7F8; 
+	padding: 45px 0;
+}
+.franchise h2{
+	text-align: center;
+	font-family: 'NanumMyeongjo', sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.fTitle{
+	position: relative;
+	margin-right: 10px;
+}
+.franchise span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-family: 'NotoSans', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: normal;
+}
+.franchise span img{
+	width: 10px;
+}
+.franchise p{
+	font-family: 'NotoSans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 0 10px;
+}
+
+/***공지사항***/
+.notice{
+	margin: 40px 10px;
+}
+
+.notice dt{
+	font-family: 'NanumMyeongjo', sans-serif;
+	font-size: 28px;
+	font-weight: 900;
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.notice p{}
+.notice span{
+	font-family: 'NotoSans', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.notice img{
+	width: 10px;
+}
+
+.notice dd{
+	width: 300px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	border-bottom: 2px dotted #bbb;
+	padding-bottom: 8px;
+}
+
+/***sns***/
+.sns{
+	padding: 0 10px;
+	padding-bottom: 45px;
+}
+.sns h2{
+	text-align: center;
+	font-family: 'NanumMyeongjo', sans-serif;
+	font-size: 28px;
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+.sns p{
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+}
+.sns span{
+	display: inline-block;
+	width: 87px;
+	height: 87px;
+	margin-right: 15px;
+	margin-top: 20px;
+	text-indent: -9999px;
+}
+.sns .sns01{
+	background: url(../images/sns01.png) no-repeat center center;
+	background-size: cover;
+}
+.sns .sns02{
+	background: url(../images/sns02.png) no-repeat center center;
+	background-size: cover;
+}
+.sns .sns03{
+	background: url(../images/sns03.png) no-repeat center center;
+	background-size: cover;
+	margin-right: 0;
+}
+.sns .sns04{
+	background: url(../images/sns04.png) no-repeat center center;
+	background-size: cover;
+}
+.sns .sns05{
+	background: url(../images/sns05.png) no-repeat center center;
+	background-size: cover;
+}
+.sns .sns06{
+	background: url(../images/sns06.png) no-repeat center center;
+	background-size: cover;
+	margin-right: 0;
+}
