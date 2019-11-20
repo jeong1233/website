@@ -6,33 +6,37 @@
 
 /***mainBanner***/
 .mainBanner{
-	height: 731px;
+	padding: 5% 0 55% 0;
 	background: url(../images/mainBanner.png) no-repeat center center;
 	background-size: cover;
+	overflow: hidden;
 	position: relative;
 }
 .mainBanner h1{
 	font-family: "NanumMyeongjo", sans-serif;
 	font-weight: 700;
-	font-size: 45px;
-	padding-top: 80px;
+	font-size: 30px;
 	text-align: center;
+	padding-top: 0;
 }
 
 .mText{
 	background: url(../images/textBox.png) no-repeat center center;
-	height: 200px;
-	margin: 20px 0;
+	background-size: 30%;
+	padding: 16% 0;
+	margin: 10px 0;
 	text-align: center;
 	font-family: "NanumMyeongjo", sans-serif;
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 15px;
+	line-height: 25px;
 }
-.mText li{
-	padding-top: 16px;
-	padding-left: 26px;
+.mInfo{
+	position: absolute;
+	top: 18%;
+	right: 50%;
+	margin-right: -38px;
 }
-
 .playBtn{
 	position: absolute;
 	bottom: 20px;
