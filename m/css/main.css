@@ -6,9 +6,9 @@
 
 /***mainBanner***/
 .mainBanner{
+	height: 731px;
 	background: url(../images/mainBanner.png) no-repeat center center;
 	background-size: cover;
-	height: 731px;
 	position: relative;
 }
 .mainBanner h1{
@@ -54,7 +54,7 @@
 
 /****추천메뉴****/
 .rMenu{
-	margin: 40px 10px;
+	margin: 60px 10px;
 	text-align: center;
 }
 .rMenu dt{
@@ -104,7 +104,7 @@
 .brandInfo{
 	background: #F6F7F8; 
 	height: 315px; 
-	padding: 30px 10px;
+	padding: 60px 10px;
 	font-family: 'NanumMyeongjo', sans-serif;
 }
 .brandInfo li{
@@ -136,9 +136,8 @@
 .store{
 	background: url(../images/storeBg.png) no-repeat center center;
 	background-size: cover;
-	padding: 0 10px;
+	padding: 60px 10px;
 	color: #fff;
-	padding-bottom: 45px;
 }
 .store dt{
 	font-family: 'NanumMyeongjo', sans-serif;
@@ -146,7 +145,7 @@
 	font-size: 30px;
 	letter-spacing: 3px;
 	text-align: center;
-	padding: 45px 0;
+	padding-bottom: 45px;
 }
 .store dd{
 	border: 2px solid #fff;
@@ -171,7 +170,7 @@
 /***가맹점문의***/
 .franchise{
 	background: #F6F7F8; 
-	padding: 45px 0;
+	padding: 60px 0;
 }
 .franchise h2{
 	text-align: center;
@@ -179,7 +178,7 @@
 	font-weight: 900;
 	font-size: 30px;
 	letter-spacing: 3px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	position: relative;
 }
 .fTitle{
@@ -203,11 +202,12 @@
 	font-weight: 400;
 	font-size: 16px;
 	margin: 0 10px;
+	text-align: center;
 }
 
 /***공지사항***/
 .notice{
-	margin: 40px 10px;
+	margin: 60px 10px;
 }
 
 .notice dt{
@@ -216,9 +216,8 @@
 	font-weight: 900;
 	position: relative;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
-.notice p{}
 .notice span{
 	font-family: 'NotoSans', sans-serif;
 	font-weight: 500;
@@ -232,30 +231,34 @@
 }
 
 .notice dd{
-	width: 300px;
+	width: 75%;
+	font-size: 16px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	font-size: 16px;
-	border-bottom: 2px dotted #bbb;
-	padding-bottom: 8px;
+	border-bottom: 1px dotted #bbb;
+	padding-bottom: 13px;
+	margin: 0 auto;
 }
 
 /***sns***/
 .sns{
-	padding: 0 10px;
-	padding-bottom: 45px;
+	padding: 60px 10px;
+	padding-bottom: 120px;
 }
 .sns h2{
 	text-align: center;
 	font-family: 'NanumMyeongjo', sans-serif;
 	font-size: 28px;
 	font-weight: 900;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 .sns p{
 	font-size: 18px;
 	font-weight: 500;
+	text-align: center;
+}
+.snsPhoto{
 	text-align: center;
 }
 .sns span{
@@ -263,7 +266,7 @@
 	width: 87px;
 	height: 87px;
 	margin-right: 15px;
-	margin-top: 20px;
+	margin-top: 30px;
 	text-indent: -9999px;
 }
 .sns .sns01{

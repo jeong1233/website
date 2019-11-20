@@ -88,13 +88,15 @@
 /*****footer*****/
 #footer{
 	background: #494441;
-	height: 250px;
+	height: 200px;
 	padding: 40px 10px;
 	color: #fff;
+	text-align: center;
 }
 .fTop{
 	font-weight: 700;
 	font-size: 14px;
+	padding-top: 8px;
 	padding-bottom: 8px;
 }
 .fTop a{
