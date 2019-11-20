@@ -6,7 +6,7 @@
 
 /***mainBanner***/
 .mainBanner{
-	padding: 5% 0 55% 0;
+	padding: 10% 0 55% 0;
 	background: url(../images/mainBanner.png) no-repeat center center;
 	background-size: cover;
 	overflow: hidden;
@@ -33,7 +33,7 @@
 }
 .mInfo{
 	position: absolute;
-	top: 18%;
+	top: 21%;
 	right: 50%;
 	margin-right: -39px;
 }
