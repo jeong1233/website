@@ -86,6 +86,9 @@
     font-size: 20px;
     font-weight: 500;
 }
+.panelMenu li .fa-times-circle{
+	font-size: 25px;
+}
 .panelMenu a{
     color: #fff;
     display: block;

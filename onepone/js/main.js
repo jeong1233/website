@@ -4,7 +4,7 @@ $(document).ready(function(){
         $(".panelMenu").css("width","70%");
         $(".panelBg").show();
     })
-    $(".closeBtn").click(function(){
+    $(".fa-times-circle").click(function(){
         $(".panelMenu").css("width", "0");
 		$(".panelBg").hide();
     })
