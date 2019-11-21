@@ -37,12 +37,12 @@
 	right: 50%;
 	margin-right: -39px;
 }
-/*.playBtn{
+.playBtn{
 	position: absolute;
 	bottom: 25%;
 	left: 50%;
 	margin-left: -30px;
-}*/
+}
 .playBtn li{
 	float: left;
 	width: 10px;
