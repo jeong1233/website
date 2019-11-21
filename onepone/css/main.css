@@ -21,23 +21,24 @@
 }
 
 .mText{
-	background: url(../images/textBox.png) no-repeat center center;
-	background-size: 40%;
-	padding: 20% 0;
+	background: url(../images/textBox.png) no-repeat 42% center;
+	background-size: 50%;
+	padding: 25% 0;
 	margin: 10px 0;
-	text-align: center;
 	font-family: "NanumMyeongjo", sans-serif;
 	font-weight: 400;
-	font-size: 15px;
-	line-height: 30px;
+	font-size: 25px;
 }
 .mInfo{
+	line-height: 40px;
+	margin-left: -39px;
 	position: absolute;
-	top: 25%;
-	right: 50%;
-	margin-right: -39px;
+	width: 100%;
+	top: 24%;
+	left: 50%;
+	margin-left: -48px;
 }
-.playBtn{
+/*.playBtn{
 	position: absolute;
 	bottom: 25%;
 	left: 50%;
@@ -54,11 +55,11 @@
 }
 .playBtn li:first-child{
 	background: #fff;
-}
+}*/
 
 /****추천메뉴****/
 .rMenu{
-	padding: 60px 10px;
+	padding: 60px 5%;
 	text-align: center;
 	position: relative;
 }
@@ -108,7 +109,7 @@
 .brandInfo{
 	background: #F6F7F8; 
 	height: 285px;
-	padding: 60px 10px;
+	padding: 35px 5%;
 	font-family: 'NanumMyeongjo', sans-serif;
 }
 .brandInfo li{
@@ -129,18 +130,18 @@
 }
 .brandInfo .infoTitle{
 	float: left;
-	line-height: 40px;
 	font-size:25px;
 }
 .infoTitle p{
 	color: #F46606;
+	padding-top: 25px;
 }
 
 /***매장찾기***/
 .store{
 	background: url(../images/storeBg.png) no-repeat center center;
 	background-size: cover;
-	padding: 60px 10px;
+	padding: 35px 5%;
 	color: #fff;
 }
 .store dt{
@@ -174,7 +175,7 @@
 /***가맹점문의***/
 .franchise{
 	background: #F6F7F8; 
-	padding: 90px 0;
+	padding: 35px 0;
 	position: relative;
 }
 .franchise h2{
@@ -210,7 +211,7 @@
 
 /***공지사항***/
 .notice{
-	padding: 60px 10px;
+	padding: 35px 5%;
 	position: relative;
 }
 
@@ -245,8 +246,7 @@
 
 /***sns***/
 .sns{
-	padding: 60px 10px;
-	padding-bottom: 120px;
+	padding: 35px 5%;
 }
 .sns h2{
 	text-align: center;
