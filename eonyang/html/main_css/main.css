@@ -4,7 +4,7 @@
 .mainBanner{
     background: url(../images/school-1974369_1920.jpg) no-repeat center 40%;
     background-size: cover;
-    height: 500px;
+    height: 700px;
 }
 .mainBanner p{
     text-align: center;
@@ -13,7 +13,7 @@
 }
 .mainText{
 	line-height: 70px;
-	padding: 145px;
+	padding: 245px;
 }
 .mainText01{
     font-size: 55px;
@@ -28,59 +28,63 @@
     font-weight: 300;
 }
 
-/*con01*/
-.con01{
-	margin: 95px auto;
+/*con04*/
+.con04{
+	background: #FCFCFC;
+	background-size: cover;
+	text-align: center;
+	padding-bottom: 40px;
 }
 
-.notice{
-    font-size: 18px;
-    font-weight: 300;
+.con04 .conTit{
+	padding-bottom: 0;
 }
-.notice dd{
-	line-height: 60px;
+.icon{
+	padding-top: 60px;
+	position: relative;
 }
-.notice dd p{
-    display: inline-block;
+.icon li{
+	display: inline-block;
+	font-size: 17px;
+	margin: 0 60px;
 	vertical-align: middle;
 }
-
-.nTit{
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    position: relative;
+.icon span{
+	display: block;
+	width: 65px;
+	height: 60px;
+	background-size: cover;
+	margin: 0 auto; /*블럭됐으므로 가로값 제외하면 다 마진.그래서 중간정렬은 이걸로!*/
 }
-.nTit a{
-    color: #aaa;
-}
-.nTit p{
-    display: inline-block;
-    margin-right: 70px;
+.icon p{
+	margin-top: 30px;
 }
 
-.nInfo{
-    width: 550px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	margin-right: 554px;
+.icon01{
+	background: url(../images/ico_parent.png) no-repeat;
+}
+.icon02{
+	background: url(../images/ico_computer.png) no-repeat;
+}
+.icon03{
+	background: url(../images/ico_school.png) no-repeat;
+}
+.icon04{
+	background: url(../images/ico_edu.png) no-repeat;
+}
+.icon05{
+	background: url(../images/ico_book.png) no-repeat;
 }
 
-.nTit .plusBtn{
+.con04 .conTit{
+	position: relative;
+}
+.con04 .plusBtn{
     font-size: 12px;
     font-weight: 300;
     position: absolute;
-    bottom: 0;
+	bottom: 0;
     right: 0;
-	color: #333;
-}
-.plusBtn span{
-	vertical-align: middle;
-}
-.plusBtn img{
-    margin-left: 10px;
-    vertical-align: middle;
 }
 
 /*con02*/
@@ -190,61 +194,58 @@
     right: 0;
 }
 
-/*con04*/
-.con04{
-	background: #FCFCFC;
-	background-size: cover;
-	text-align: center;
-	padding-bottom: 40px;
+/*con01*/
+.con01{
+	margin: 95px auto;
 }
 
-.con04 .conTit{
-	padding-bottom: 0;
+.notice{
+    font-size: 18px;
+    font-weight: 300;
 }
-.icon{
-	padding-top: 60px;
-	position: relative;
+.notice dd{
+	line-height: 60px;
 }
-.icon li{
-	display: inline-block;
-	font-size: 17px;
-	margin: 0 60px;
+.notice dd p{
+    display: inline-block;
 	vertical-align: middle;
 }
-.icon span{
-	display: block;
-	width: 65px;
-	height: 60px;
-	background-size: cover;
-	margin: 0 auto; /*블럭됐으므로 가로값 제외하면 다 마진.그래서 중간정렬은 이걸로!*/
+
+.nTit{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    position: relative;
 }
-.icon p{
-	margin-top: 30px;
+.nTit a{
+    color: #aaa;
+}
+.nTit p{
+    display: inline-block;
+    margin-right: 70px;
 }
 
-.icon01{
-	background: url(../images/ico_parent.png) no-repeat;
-}
-.icon02{
-	background: url(../images/ico_computer.png) no-repeat;
-}
-.icon03{
-	background: url(../images/ico_school.png) no-repeat;
-}
-.icon04{
-	background: url(../images/ico_edu.png) no-repeat;
-}
-.icon05{
-	background: url(../images/ico_book.png) no-repeat;
+.nInfo{
+    width: 550px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-right: 554px;
 }
 
-.con04 .conTit{
-	position: relative;
-}
-.con04 .plusBtn{
+.nTit .plusBtn{
     font-size: 12px;
     font-weight: 300;
     position: absolute;
-	bottom: 0;
+    bottom: 0;
     right: 0;
+	color: #333;
 }
+.plusBtn span{
+	vertical-align: middle;
+}
+.plusBtn img{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
