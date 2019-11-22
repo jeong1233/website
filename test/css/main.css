@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/****section****/
+.section{
+	float: right;
+}
+/**container**/
+#container{
+	text-align: center;
+}
+
+.mainSlider{
+	background: red;
+	width: 800px;
+	height: 400px;
+	line-height: 400px;
+}
+.mainSlider a{
+	color: #333;
+	font-weight: 500;
+}
+
+.mainCon{
+	padding: 80px 0;
+	position: relative;
+}
+.mainCon button{
+	background: #333;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 0;
+	color: #fff;
+}
+.btn02{
+	margin: 0 30px;
+}
+.fas{
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+}
+.fa-arrow-left{
+	left: 56px;
+}
+.fa-arrow-right{
+	right: 56px;
+}
