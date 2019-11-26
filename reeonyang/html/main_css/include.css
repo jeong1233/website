@@ -157,7 +157,7 @@
 .readingBtn{
 	padding: 5px;
 	float: right;
-	width: 220px;
+	width: 170px;
 	font-size: 10px;
 	font-weight: 200;
 	text-indent: 5px;
@@ -173,7 +173,7 @@
 .readingBtn img{
 	width: 10px;
 	vertical-align: middle;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 .fInfo{
 	float: left;
