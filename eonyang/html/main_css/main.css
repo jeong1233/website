@@ -28,26 +28,36 @@
     font-weight: 300;
 }
 
-/*con04*/
-.con04{
-	background: #FCFCFC;
+/*con01*/
+.con01{
 	background-size: cover;
 	text-align: center;
 	padding-bottom: 40px;
 }
-
-.con04 .conTit{
+.con01 .conTit{
 	padding-bottom: 0;
+	position: relative;
+}
+.con01 .plusBtn{
+    font-size: 12px;
+    font-weight: 300;
+    position: absolute;
+	bottom: 0;
+    right: 0;
 }
 .icon{
 	padding-top: 60px;
 	position: relative;
 }
 .icon li{
-	display: inline-block;
 	font-size: 17px;
-	margin: 0 60px;
+	font-weight: 400;
 	vertical-align: middle;
+	width: 145px;
+	height: 116px;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 10px 0;
 }
 .icon span{
 	display: block;
@@ -59,7 +69,6 @@
 .icon p{
 	margin-top: 30px;
 }
-
 .icon01{
 	background: url(../images/ico_parent.png) no-repeat;
 }
@@ -75,21 +84,31 @@
 .icon05{
 	background: url(../images/ico_book.png) no-repeat;
 }
-
-.con04 .conTit{
-	position: relative;
+.icon li:hover{
+	font-weight: 700;
 }
-.con04 .plusBtn{
-    font-size: 12px;
-    font-weight: 300;
-    position: absolute;
-	bottom: 0;
-    right: 0;
+.icon li:hover a{
+	color: #381FED; 
+}
+.icon li:hover .icon01{
+	background: url(../images/ico_parentOn.png) no-repeat;
+}
+.icon li:hover .icon02{
+	background: url(../images/ico_computerOn.png) no-repeat;
+}
+.icon li:hover .icon03{
+	background: url(../images/ico_schoolOn.png) no-repeat;
+}
+.icon li:hover .icon04{
+	background: url(../images/ico_eduOn.png) no-repeat;
+}
+.icon li:hover .icon05{
+	background: url(../images/ico_bookOn.png) no-repeat;
 }
 
 /*con02*/
 .con02{
-	background: #FCFCFC;
+	background: #eee;
 	background-size: cover;
 }
 .conTit{
@@ -158,9 +177,34 @@
 .con03{
 	margin: 95px auto;
 }
-
-.c03Menu{
+.con03 .nTit{
 	position: relative;
+}
+.con03 .tLunch:after{
+	content: "";
+	display: none;
+	width: 120px;
+	height: 15px;
+	background : #FFFF80;
+	position: absolute;
+	top: 37px;
+	left: 0;	
+}
+.con03 .tLunch:hover:after{
+	display: block;
+}
+.con03 .mEvent:after{
+	content: "";
+	display: none;
+	width: 120px;
+	height: 15px;
+	background : #FFFF80;
+	position: absolute;
+	top: 37px;
+	left: 195px;	
+}
+.con03 .mEvent:hover:after{
+	display: block;
 }
 .c03Menu dd{
 	line-height: 65px;
@@ -194,14 +238,45 @@
     right: 0;
 }
 
-/*con01*/
-.con01{
-	margin: 95px auto;
+/*con04*/
+.con04{
+	background: #eee;
+	padding: 35px 0;
+	text-align: center;
 }
-
+.con04 .nTit{
+	position: relative;
+}
+.con04 .note:after{
+	content: "";
+	display: none;
+	width: 90px;
+	height: 15px;
+	background : #FFFF80;
+	position: absolute;
+	top: 37px;
+	left: 0;	
+}
+.con04 .note:hover:after{
+	display: block;
+}
+.con04 .alert:after{
+	content: "";
+	display: none;
+	width: 120px;
+	height: 15px;
+	background : #FFFF80;
+	position: absolute;
+	top: 37px;
+	left: 166px;	
+}
+.con04 .alert:hover:after{
+	display: block;
+}
 .notice{
     font-size: 18px;
     font-weight: 300;
+	display: inline-block;
 }
 .notice dd{
 	line-height: 60px;
@@ -216,6 +291,7 @@
     font-weight: 400;
     margin-bottom: 50px;
     position: relative;
+	text-align: left;
 }
 .nTit a{
     color: #aaa;
@@ -226,6 +302,7 @@
 }
 
 .nInfo{
+	text-align: left;
     width: 550px;
 	white-space: nowrap;
 	overflow: hidden;
