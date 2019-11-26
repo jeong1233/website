@@ -84,31 +84,43 @@
 
 /**호버**/
 .gnb li:hover .lnb{
-	max-height: 216px;
+	max-height: 243px;
 }
 .lnb{
 	background: #fff;
 	width: 100%;
 	max-height: 0;
 	position: absolute;
-	top: 40px;
+	top: 62px;
 	overflow: hidden;
 	/*부모 높이 0인데 자식 튀어나왔으므로 부모 영역 밖의 값 숨기기*/
-	transition: max-height 1s
+	transition: max-height 1s;
 }
 .lnb li{
 	margin-left: 0;
-	line-height: 30px;
-}
-.lnb li a:hover{
-	border-bottom: 2px solid #aaa;
+	line-height: 40px;
+	position: relative;
 }
 .lnb li a{
 	font-size: 14px;
 	font-weight: 200;
 	color: #333;
+	display: block;
 }
-
+.lnb li a:after{
+	content: "";
+	width: 100px;
+	height: 2px;
+	background: #bbb;
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -50px;
+}
+.lnb li a:hover:after{
+	display: block;
+}
 
 /*****footer*****/
 #footer{
@@ -161,7 +173,7 @@
 .readingBtn img{
 	width: 10px;
 	vertical-align: middle;
-	margin-left: 15px;
+	margin-left: 20px;
 }
 .fInfo{
 	float: left;
