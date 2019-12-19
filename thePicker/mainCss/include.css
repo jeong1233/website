@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/****header****/
+#header{
+	background: #F1F0ED;
+	font-family: "Cera Pro", sans-serif;
+	padding: 20px 0;
+	height: 42px;
+}
+#header h1{
+	float: left;
+}
+
+/**gnb**/
+.gnb{
+	float: left;
+	line-height: 40px;
+}
+.gnb li{
+	float: left;
+	margin-left: 43px;
+	font-size: 18px;
+	position: relative;
+}
+.gnb li a{
+	color: #000;
+	font-weight: 600;
+}
+
+.utill{
+	float: right;
+	font-size: 12px;
+	line-height: 40px;
+}
+.utill p{
+	float: left;
+	margin-left: 25px;
+}
+.utill p a{
+	color: #000;
+	font-weight: 500;
+}
+.srchBtn{
+	background: url(../images/srchBtn.png) no-repeat 134px center;
+	width: 150px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 5px;
+	border: 1px solid #000;
+}
+.gnb>li:after{
+    content: "";
+	display: block;
+	margin: 0 auto;
+    width: 0;
+    height: 4px;
+    background: #445226; 
+    transition: width 1s;
+}
+.gnb>li:hover:after{
+    width: 100%;
+}
+
+/**lnb**/
+.lnb{
+	text-align: center;
+	background: #fff;
+	width: 100%;
+	max-height: 0;
+	position: absolute;
+	top: 52px;
+	z-index: 11;
+	overflow: hidden;
+    transition: max-height 1s;
+}
+.lnb li{
+	font-weight: 500;
+	font-size: 15px;
+	float: none;
+	margin-left: 0;
+}
+
+.lnb li:after{
+	content: "";
+	width: 0;
+	height: 4px;
+	display: block;
+	margin: 0 auto;
+	background: #445226;
+	transition: width 1s;
+}
+.lnb li:hover:after{
+	width: 100%;
+}
+.gnb li:hover:after{
+    max-width: 160px;
+}
+.gnb li:hover .lnb{
+	max-height: 350px;
+}
+.lnb li a{
+}
+.lnb li:hover a{
+    display: block;
+}
+
+/***footer***/
+#footer{
+	background: #161515;
+	padding: 80px 0;
+	color: #fff;
+}
+#footer h1{
+	padding-bottom: 50px;
+}
+#footer h1 img{}
+.fTop{
+	position: relative;
+}
+
+.snsIcon{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.snsIcon a{
+}
+.icoFb{
+	margin-right: 15px;
+    vertical-align: middle;
+}
+.icoInsta{
+    vertical-align: middle;
+}
+
+.fTxt01{
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.fTxt01 li{
+	float: left;
+}
+.fTxt01 li:after{
+	content: "";
+	display: inline-block;
+	width: 2px;
+	height: 15px;
+	background: #fff;
+	margin: 0 13px;
+}
+.fTxt01 li:last-child:after{
+	display: none;
+}
+.fTxt01 li a{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.fTxt02{
+	font-size: 13px;
+	line-height: 30px;
+	font-weight: 500;
+}
