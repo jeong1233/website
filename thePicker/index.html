@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>thePicker</title>
+		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+		<link rel="stylesheet" type="text/css" href="fonts/CeraPro.css">
+		<link rel="stylesheet" type="text/css" href="mainCss/slick.css">
+		<link rel="stylesheet" type="text/css" href="mainCss/default.css">
+		<link rel="stylesheet" type="text/css" href="mainCss/include.css">
+		<link rel="stylesheet" type="text/css" href="mainCss/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script> 
+		<script src="js/slick.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".mainSlider").slick({
+                    dots: true,
+                    arrows: true,
+					prevArrow:'<div class="prevBtn"><img src="images/prev-icon.png" alt="이전버튼"></div>', 
+                    nextArrow:'<div class="nextBtn"><img src="images/next-icon.png" alt="다음버튼"></div>',
+                    infinite: true,
+                    initialSlide:0,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay:true,
+                    autoplayspeed:2500,
+                    swipe:true
+                })
+                $(".shopSlider").slick({
+                    dots: true,
+                    arrows:true,
+                    prevArrow:'<div class="prevBtn"><img src="images/arrowL.png" alt="이전버튼"></div>', 
+                    nextArrow:'<div class="nextBtn"><img src="images/arrowR.png" alt="다음버튼"></div>',
+                    infinite: true,
+                    initialSlide:0,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    autoplay:true,
+                    autoplayspeed:2000,
+                    swipe:true
+                })
+            /*$("#header h1").click({
+                    location.reload(true),
+                    location.href = location.href,
+                    history.go(0)
+                })*/
+			});
+		</script>
+	</head>
+	
+	<body>
+		<!--전체시작-->
+		<div id="wrap">
+			<!--header-->
+			<header id="header">
+				<div class="inner cf">
+				<!--logo-->
+				<h1><a href="#"><img src="images/logo.png" alt="로고"></a></h1>
+				<!--logo-->
+				<!--gnb-->
+				<ul class="gnb">
+					<li>
+						<a href="https://thepicker.net/about" target="_blank">THE PICKER</a>
+							<!--lnb-->
+							<ul class="lnb">
+								<li><a href="https://thepicker.net/47" target="_blank">ABOUT US</a></li>
+								<li><a href="https://thepicker.net/26" target="_blank">OUR STORE</a></li>
+								<li><a href="https://thepicker.net/25" target="_blank">UPDATE</a></li>
+								<li><a href="https://thepicker.net/33" target="_blank">PRESS</a></li>
+							</ul>
+							<!--lnb-->
+					</li>
+					<li>
+						<a href="https://thepicker.net/29" target="_blank">JOURNEY TO LESS</a>
+					</li>
+					<li>
+						<a href="https://thepicker.net/7" target="_blank">SHOPPING</a>
+							<!--lnb-->
+							<ul class="lnb">
+								<li><a href="https://thepicker.net/23" target="_blank">LIVING</a></li>
+								<li><a href="https://thepicker.net/22" target="_blank">KITCHEN</a></li>
+								<li><a href="https://thepicker.net/21" target="_blank">BATHROOM</a></li>
+								<li><a href="https://thepicker.net/44" target="_blank">ZERO WASTES KIT</a></li>
+							</ul>
+						<!--lnb-->
+					</li>
+				</ul>
+				<!--gnb-->
+				<!--utill-->
+				<div class="utill">
+					<p><a href="https://thepicker.net/site_join_agree?back_url=L2Fib3V0" target="_blank">REGISTER</a></p>
+					<p><a href="https://thepicker.net/login?back_url=L2Fib3V0&used_login_btn=Y" target="_blank">LOGIN</a></p>
+					<p><input class="srchBtn" placeholder="검색어를 입력하세요."></p>
+				</div>
+				<!--utill-->
+				</div>
+			</header>
+			<!--header-->
+			
+			<!--container-->
+			<div id="container">
+				<!--mainSlider-->
+				<ul class="mainSlider">
+					<!--첫번째-->
+					<li class="slider01">
+						<a href="https://thepicker.net/about" target="_blank">
+							<h3>타이틀</h3>
+						</a>
+					</li>
+					<!--첫번째-->
+					<!--두번째-->
+					<li class="slider02">
+						<a href="https://thepicker.net/29" target="_blank">
+							<h3>타이틀</h3>
+						</a>
+					</li>
+					<!--두번째-->
+					<!--세번째-->
+					<li class="slider03">
+						<a href="https://thepicker.net/7" target="_blank">
+							<h3>타이틀</h3>
+						</a>
+					</li>
+					<!--세번째-->
+				</ul>
+				<!--mainSlider-->
+				
+				<!--mainCon01-->
+				<div class="con01">
+				<div class="inner">
+					<!--타이틀-->
+					<h2><img src="images/con01Tit.png" alt="타이틀"></h2>
+					<!--타이틀-->
+					<!--쇼핑슬라이드-->
+					<ul class="shopSlider slider">
+						<!--첫번째-->
+						<li>
+							<a href="https://thepicker.net/22/?idx=122" target="_blank">
+								<img src="images/shop1.PNG" alt="제품1">
+								<p>네츄럴 린넨 손수건<br>
+									4,000원
+								</p>
+							</a>
+						</li>
+						<!--첫번째-->
+						<!--두번째-->
+						<li>
+							<a href="https://thepicker.net/22/?idx=165" target="_blank">
+								<img src="images/shop3.PNG" alt="제품1">
+								<p>롱핸들 설거지 브러쉬<br>
+									6,500원
+								</p>
+							</a>
+						</li>
+						<!--두번째-->
+						<!--세번째-->
+						<li>
+							<a href="https://thepicker.net/21/?idx=148" target="_blank">
+								<img src="images/shop2.PNG" alt="제품1">
+								<p>다회용 생활랩<br>
+									5,000원
+								</p>
+							</a>
+						</li>
+						<!--세번째-->
+						<!--네번째-->
+						<li>
+							<a href="https://thepicker.net/23/?idx=166" target="_blank">
+								<img src="images/shop4.PNG" alt="제품1">
+								<p>대나무 연필깎이<br>
+									2,000원
+								</p>
+							</a>
+						</li>
+						<!--네번째-->
+						<!--다섯번째-->
+						<li>
+							<a href="https://thepicker.net/22/?idx=159" target="_blank">
+								<img src="images/shop5.PNG" alt="제품1">
+								<p>설거지용 팟브러쉬<br>
+									6,000원
+								</p>
+							</a>
+						</li>
+						<!--다섯번째-->
+						<!--여섯번째-->
+						<li>
+							<a href="https://thepicker.net/21/?idx=167" target="_blank">
+								<img src="images/shop6.PNG" alt="제품1">
+								<p>유기농 햄프코튼 재사용 화장솜<br>
+									12,000원
+								</p>
+							</a>
+						</li>
+						<!--여섯번째-->
+					</ul>
+				</div>
+                </div>
+				<!--mainCon01-->
+				
+				<!--mainCon02-->
+				<div class="con02">
+                <div class="inner">
+				    <!--타이틀-->
+				    <h2><img src="images/con02Tit.png" alt="타이틀"></h2>  
+				    <!--타이틀-->  
+				    <!--공지사항-->
+				    <div class="notice">
+                        <!--타이틀-->
+                        <div class="nTit">
+                            <h3>Notice</h3>
+                           <!--더보기버튼-->
+                           <p class="moreBtn">
+                               <a href="https://thepicker.net/25/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&page=1" target="_blank">
+                                   <img src="images/moreBtn.png" alt="더보기버튼">
+                               </a>
+                           </p>
+                           <!--더보기버튼-->
+                        </div>
+                        <!--타이틀-->
+                        <!--사진-->
+                        <span class="photo">
+                            사진
+                        </span>
+                        <!--사진-->
+                        <!--공지리스트-->
+                        <ul class="nList">
+                            <li>
+                                <a href="https://thepicker.net/25/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&bmode=view&idx=2710844&t=board" target="_blank">
+									<span>[행사안내]</span> <p>프레시버블과 함께하는 '건강한 지속가능성과 안전한 성분' 강의 안내</p>     
+                                </a>
+                            </li>
+							<li>
+                                <a href="https://thepicker.net/25/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&bmode=view&idx=2710844&t=board" target="_blank">
+									<span>[행사안내]</span> <p>프레시버블과 함께하는 '건강한 지속가능성과 안전한 성분' 강의 안내</p>     
+                                </a>
+                            </li>
+							<li>
+                                <a href="https://thepicker.net/25/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&bmode=view&idx=2710844&t=board" target="_blank">
+									<span>[행사안내]</span> <p>프레시버블과 함께하는 '건강한 지속가능성과 안전한 성분' 강의 안내</p>     
+                                </a>
+                            </li>
+							<li>
+                                <a href="https://thepicker.net/25/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&bmode=view&idx=2710844&t=board" target="_blank">
+									<span>[행사안내]</span> <p>프레시버블과 함께하는 '건강한 지속가능성과 안전한 성분' 강의 안내</p>     
+                                </a>
+                            </li>
+							<li>
+                                <a href="https://thepicker.net/25/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&bmode=view&idx=2710844&t=board" target="_blank">
+									<span>[행사안내]</span> <p>프레시버블과 함께하는 '건강한 지속가능성과 안전한 성분' 강의 안내문입니다</p>     
+                                </a>
+                            </li>
+							<li>
+                                <a href="https://thepicker.net/25/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6MTt9&bmode=view&idx=2710844&t=board" target="_blank">
+									<span>[행사안내]</span> <p>프레시버블과 함께하는 '건강한 지속가능성과 안전한 성분' 강의 안내</p>     
+                                </a>
+                            </li>
+                        </ul>
+                        <!--공지리스트-->
+                    </div>
+				    <!--공지사항-->
+				</div>
+                </div>
+				<!--mainCon02-->
+				
+				<!--mainCon03-->
+				<div class="con03">
+				<div class="inner">
+					<!--타이틀-->
+					<h2><img src="images/con03Tit.png" alt="타이틀"></h2>  
+					<!--타이틀-->
+					<!--인스타로고-->
+					<h3>
+						<a href="https://www.instagram.com/thepicker/" target="_blank">
+							<img src="images/instaLogo.png" alt="인스타로고" class="instaLogo"><img src="images/snsTit.png" alt="snsTit">
+						</a>
+						<!--더보기버튼-->
+                           <p class="moreBtn">
+                               <a href="https://www.instagram.com/thepicker/" target="_blank">
+                                   <img src="images/moreBtn.png" alt="더보기버튼">
+                               </a>
+                           </p>
+                         <!--더보기버튼-->
+					</h3>
+					<!--인스타로고-->
+					<!--인스타사진-->
+					<ul class="instaPhoto">
+						<!--첫번째-->
+						<li class="insta01">
+							<a href="https://www.instagram.com/p/B5oz2ulpjjY/" target="_blank">
+								<img src="images/sns001.PNG" alt="sns01">
+								<!--hover-->
+								<p>
+									<img src="images/ico_like.png" alt="하트"><span>145&nbsp;&nbsp;</span>
+									<img src="images/ico_reply.png" alt="댓글"><span>2</span>
+								</p>
+								<!--hover-->
+								</a>
+						</li>
+						<!--첫번째-->
+						<!--두번째-->
+						<li class="insta02">
+							<a href="https://www.instagram.com/p/B4RO_Q4FcXx/" target="_blank">
+								<img src="images/sns02.PNG" alt="sns02">
+								<!--hover-->
+								<p>
+									<img src="images/ico_like.png" alt="하트"><span>243&nbsp;&nbsp;</span>
+									<img src="images/ico_reply.png" alt="댓글"><span>0</span>
+								</p>
+								<!--hover-->
+							</a>
+						</li>
+						<!--두번째-->
+						<!--세번째-->
+						<li class="insta03">
+							<a href="https://www.instagram.com/p/B4yuivAJtVp/" target="_blank">
+								<img src="images/sns01.PNG" alt="sns03">
+								<!--hover-->
+								<p>
+									<img src="images/ico_like.png" alt="하트"><span>158&nbsp;&nbsp;</span>
+									<img src="images/ico_reply.png" alt="댓글"><span>8</span>
+								</p>
+								<!--hover-->
+							</a>
+						</li>
+						<!--세번째-->
+						<!--네번째-->
+						<li class="insta04">
+							<a href="https://www.instagram.com/p/B4MeGncpR5s/" target="_blank">
+								<img src="images/sns002.PNG" alt="sns04">
+								<!--hover-->
+								<p>
+									<img src="images/ico_like.png" alt="하트"><span>310&nbsp;&nbsp;</span>
+									<img src="images/ico_reply.png" alt="댓글"><span>15</span>
+								</p>
+								<!--hover-->
+							</a>
+						</li>
+						<!--네번째-->
+						<!--다섯번째-->
+						<li class="insta05">
+							<a href="https://www.instagram.com/p/B3EB_TOpUMd/" target="_blank">
+								<img src="images/sns005.PNG" alt="sns05">
+								<!--hover-->
+								<p>
+									<img src="images/ico_like.png" alt="하트"><span>270&nbsp;&nbsp;</span>
+									<img src="images/ico_reply.png" alt="댓글"><span>22</span>
+								</p>
+								<!--hover-->
+							</a>
+						</li>
+						<!--다섯번째-->
+						<!--여섯번째-->
+						<li class="insta06">
+							<a href="https://www.instagram.com/p/B4JYx1qJhi8/" target="_blank">
+								<img src="images/sns003.PNG" alt="sns06">
+								<!--hover-->
+								<p>
+									<img src="images/ico_like.png" alt="하트"><span>461&nbsp;&nbsp;</span>
+									<img src="images/ico_reply.png" alt="댓글"><span>41</span>
+								</p>
+								<!--hover-->
+							</a>
+						</li>
+						<!--여섯번째-->
+						<!--일곱번째-->
+						<li class="insta07">
+							<a href="https://www.instagram.com/p/B3PTrg3JnrQ/" target="_blank">
+								<img src="images/sns006.PNG" alt="sns07">
+								<!--hover-->
+								<p>
+									<img src="images/ico_like.png" alt="하트"><span>395&nbsp;&nbsp;</span>
+									<img src="images/ico_reply.png" alt="댓글"><span>6</span>
+								</p>
+								<!--hover-->
+							</a>
+						</li>
+						<!--일곱번째-->
+						<!--여덟번째-->
+						<li class="insta08">
+							<a href="https://www.instagram.com/p/B3BS-ecJwTF/" target="_blank">
+								<img src="images/sns004.PNG" alt="sns08">
+								<!--hover-->
+								<p>
+									<img src="images/ico_like.png" alt="하트"><span>242&nbsp;&nbsp;</span>
+									<img src="images/ico_reply.png" alt="댓글"><span>12</span>
+								</p>
+								<!--hover-->
+							</a>
+						</li>
+						<!--여덟번째-->
+					</ul>
+					<!--인스타사진-->
+				</div>
+				</div>
+				<!--mainCon03-->
+			</div>
+			<!--container-->
+			
+			<!--footer-->
+			<footer id="footer">
+				<div class="inner">
+					<!--fTop-->
+					<div class="fTop">
+					<!--로고-->
+					<h2><img src="images/fLogo.png" alt="fLogo"></h2>
+					<!--로고-->
+					<!--sns아이콘-->
+					<div class="snsIcon">
+						<a href="http://facebook.com/thepicker.official" target="_blank" class="icoFb"><img src="images/ico_fb_w.png" alt="fb_w"></a>
+						<a href="https://www.instagram.com/thepicker/" target="_blank" class="icoInsta"><img src="images/ico_insta_w.png" alt="insta_w"></a>
+					</div>
+					<!--sns아이콘-->
+					</div>
+					<!--fTop-->
+					<!--txt01-->
+					<ul class="fTxt01">
+						<li><a href="">개인정보처리방침</a></li>
+						<li><a href="">이용약관</a></li>
+						<li><a href="https://thepicker.net/43" target="_blank">입점문의</a></li>
+					</ul>
+					<!--txt01-->
+					<!--txt02-->
+					<p class="fTxt02">
+						대표&nbsp;&nbsp;&#124;&nbsp;&nbsp;송경호&nbsp;&nbsp;홍지선<br>
+						사업자등록번호&nbsp;&nbsp;&#124;&nbsp;&nbsp;753-86-01034&nbsp;&nbsp;&#124;&nbsp;&nbsp;통신판매업신고&nbsp;&nbsp;2018-서울성동-0432&nbsp;&nbsp;주소&nbsp;&nbsp;&#124;&nbsp;&nbsp;서울시 성동구 왕십리로 115, 헤이그라운드 9F<br>
+						고객센터&nbsp;&nbsp;&#124;&nbsp;&nbsp;070-4118-0710  (화 - 금 오후 12-6시)   
+                        메일&nbsp;&nbsp;&#124;&nbsp;&nbsp;hello@thepicker.net<br>
+						Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;더피커(thepicker) 
+					</p>
+					<!--txt02-->
+				</div>
+			</footer>
+			<!--footer-->
+		</div>
+		<!--전체끝-->
+	</body>
+</html>
