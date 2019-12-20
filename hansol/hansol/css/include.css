@@ -1,0 +1,163 @@
+@charset"utf-8";
+
+/*헤더*/
+#header{
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+#header h1{
+    width:110px;
+    height: 45px;
+    background: url(../images/sp_com.png) no-repeat -300px -5px;
+    text-indent: -9999px;
+    position: absolute;
+    left: 50px;
+    top:15px;
+}
+#header a{
+}
+
+.gnb{
+    display: inline-block;
+    font-size: 17px;
+}
+.gnb li{
+    float: left;
+    margin: 0 30px;
+    position: relative;
+}
+.gnb li:hover a{
+    color: #2d5b79;
+    font-weight: bold;
+}
+.gnb li a:after{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 1px;
+    background:#2d5b79;
+    position: absolute;
+    bottom: 10px;
+}
+.gnb li a:hover:after{
+    display: block;
+}
+.gnb a{
+    color: #000;
+}
+
+.utill{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 13px;
+}
+.utill li{
+    float: left;
+}
+
+.utill li:after{
+    content: "";
+    display: inline-block;
+    width:1px;
+    height: 6px;
+    background:#ccc;
+    margin: 0 5px;
+}
+.utill li:last-child:after{
+    display: none;
+}
+.utill a{
+    color: #000;
+}
+.utill a:hover{
+    text-decoration: underline;
+}
+/*푸터*/
+#footer{
+    background: #4C5459;
+}
+
+.footerTop{
+    background: #383F43;
+    padding: 10px 0;
+    height: 40px;
+    line-height: 40px;
+}
+.fMenu{
+    float: left;
+}
+.fMenu li{
+    float: left;
+}
+.fMenu li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #ddd;
+    margin: 0 5px;
+}
+.fMenu .lastBar:after{
+    display: none;
+}
+.fMenu a{
+    color: #fff;
+}
+.fMenu a:hover{
+    text-decoration: underline;
+}
+
+.footerTopR{
+    float: right;
+}
+.footerTopR div{
+    float: left;
+    margin-left: 10px;
+}
+.footerCs{
+    background: #292F32;
+    color: #fff;
+    padding: 0 15px;
+}
+.footerCs span{
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.footerCs .csNum{
+    font-size: 22px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.familySite{
+    width: 150px;
+    font-size: 14px;
+    padding: 0 15px;
+    background: #fff url(../images/arrow.png) no-repeat 95% center;
+}
+
+.footerInfo{
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 25px;  /*세로 여백*/
+}
+.footerInfo span:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #ddd;
+    margin: 0 5px;
+}
+.fLogo{
+    width: 130px;
+    height: 50px;
+    background: url(../images/sp_com.png) no-repeat -150px 0;
+    text-indent: -9999px;
+    margin: 0 auto;
+    margin-bottom: 30px; /*아래 여백 주려면 마진 0 오토 다음으로 줄 것*/
+}
