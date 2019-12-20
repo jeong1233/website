@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*고정값*/
+body,h1,h2,h3,h4,p{
+	margin: 0;
+}
+body{
+	font-family: 'NotoSans', sans-serif;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.inner{
+	width: 1200px;
+	margin: 0 auto;
+}
+.cf:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#wrap{
+    width: 100%;
+}
+#container{
+    width: 100%;
+}

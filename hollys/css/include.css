@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/*헤더*/
+#header{}
+
+.header{}
+.headerTop{}
+
+.utillL{
+	float: left;
+}
+.utillL li{
+	float: left;
+	margin-right: 10px;
+}
+.utillL .academy{
+	margin-top: 20px;
+}
+.utillL a{}
+.utillL img{}
+
+.utillR{
+	float: right;
+}
+.utillR li{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.hLogo{
+	text-align: center;
+	padding-top: 20px;
+}
+
+/*gnb*/
+.gnb{
+    height: 50px;
+    text-align: center;
+}
+.gnb > li{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    position: relative;
+}
+.gnb li:first-child{
+    margin-left: 0;
+}
+.gnb li a{
+    display: block;
+}
+/*hover*/
+.on{
+    display: none;
+}
+.lnb{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #4F4C4B;
+    display: none;
+}
+.lnb li{
+    font-weight: 200;
+    font-size: 10px;
+    display: block;
+}
+.lnb a{
+    color: #808080;
+}
+.lnb li:hover{
+    font-weight: bold;
+    background: #ddd;
+}
+.gnb li:hover .on, .gnb li:hover .lnb{
+    display: inline-block;
+}
+.gnb li:hover .off{
+    display: none;
+}
+/*footer*/
+#footer{
+    background: url(../images/bg_footer.gif) no-repeat center center;
+    height: 149px;
+}
+
+.fInfo{
+    padding: 20px 0;
+}
+.fInfo li{
+    float: left;
+    font-weight: 200;
+}
+.fInfo li:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.fInfo li:last-child:after{
+    display: none;
+}
+.fInfo li:first-child{
+    font-weight: 300;
+}
+.fInfo a{
+    color: #fff;
+    font-size: 12px;
+    
+}
+
+.fText{
+    padding: 10px 0;
+}
+.fText li{
+    font-size: 10px;
+    font-weight: 100;
+    color: #fff;
+}
+

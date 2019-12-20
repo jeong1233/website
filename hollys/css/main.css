@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+.mainSlider{
+    text-align: center;   
+    border-top: 2px solid #B5121B;
+    overflow: hidden;
+/*가로스크롤 생기면 의심되는 no.1은 젤 큰 이미지.
+이미지 overflow:hidden 해야함!*/
+}
+.playBtn{
+    background: url(../images/blet_visual.png) no-repeat 0 -16px;
+    height: 16px;
+    z-index: 1;
+}
+.playBtn a{}
+/*메인슬라이더*/
+
+/*메인컨텐츠01*/
+.mainCon01{
+    margin: 20px 0;
+}
+.mainCon01 div{
+    float: left;
+    margin-right: 79px;
+}
+.mainCon01 div:last-child{
+    margin-right: 0;
+}
+.mainCon01 img{
+    margin-top: 20px;
+}
+
+.franchise{
+    background: #FAF9F7 url(../images/menu_img01.gif) no-repeat center center;
+    width: 250px;
+    height: 300px;
+}
+.franchise img{
+    margin-left: 20px;
+}
+
+.hollysMall{
+}
+.hollysMall img{
+    margin-bottom: 10px;
+}
+.hollysMall p{
+    color: #333;
+}
+.store{
+    background: #FAF9F7 url(../images/sotre_img.gif) no-repeat center center;
+    width: 250px;
+    height: 300px;
+}
+.store img{
+    margin-left: 20px;
+}
+
+.mallImage{
+    text-align: center;
+    margin-top: 30px;
+    width: 542px;
+}
+.mallImage p{
+    text-align: center;
+    font-size: 13px;
+    margin: 0 5px;
+}
+.mallImage li{
+    float: left;
+    text-align: center;
+    border-right: 1px dotted #cecece;
+    width: 180px;
+}
+.mallImage li:last-child{
+    border-right: 0;
+}
+.hollysMall .mallImage img{
+    width: 80px;
+    height: 80px;
+}
+/*메인컨텐츠01*/
+
+/*메인컨텐츠02*/
+.mainCon02{
+    margin-bottom: 20px;
+}
+.mainCon02 li{
+    float: left;
+    padding-right: 130px;
+}
+.mainCon02 li:last-child{
+    padding-right: 0
+}
+/**주의사항**/
+/*first, last child를 쓰고 싶으면 각각의 태그로 묶여 있는 것들만 가능(ul-li나 dl-dt-dd)
+단순 a나 img 나열했을 경우 각각은 first, last child 지정X.
+.mainCon02 img{
+    padding-right: 100px;
+}
+.mainCon02 img:last-child{
+    padding-right: 0
+}
+이렇겐 X->mainCon02의 이미지 전체를 불러오는 꼴. 이미지 전체는 하나 밖에 없어 first, last 의미X*/
+/**주의사항**/
+
+/*메인컨텐츠02*/
+
+/*메인컨텐츠03*/
+.mainCon03{
+    padding-bottom: 50px;
+    border-bottom: 2px solid #B5121B;
+}
+.mainCon03 li{
+    float: left;
+    width: 260px;
+    margin-right: 50px;
+}
+.mainCon03 li:last-child{
+    margin-right: 0;
+}
+.mainCon03 img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.mainCon03 a{
+    color: #333;
+}
+.mainCon03 p{
+    font-size: 13px;
+    font-weight: 200;
+    margin: 10px 0;
+    vertical-align: middle;
+}
+
+.mainCon03 .con03Text{
+    padding-left: 0;
+}
+
+.newsText{
+}
+.newsText div{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainCon03 .newsText p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 200;
+    width: 200px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.newsText span{
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.con03Icon{
+    text-align: center;
+     margin-top: 20px;
+}
+.con03Icon div{
+    float: left;
+    width: 55px;
+    border-right: 1px solid #cecece;
+    text-align: center;
+    vertical-align: middle;
+}
+.con03Icon div:last-child{
+    border-right: none;
+}
+.con03Icon a{}
+.con03Icon img{}
+.con03Icon p{
+    text-align: center;
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 12px;
+}
+/*메인컨텐츠03*/
+
+/*메인컨텐츠04*/
+.mainCon04{
+    margin: 30px 0;
+    background: url(../images/sns_tit.gif) no-repeat;
+}
+.snsIcon{
+    margin-left: 160px;
+}
+.snsIcon li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.snsIcon img{}
+/*메인컨텐츠04*/
