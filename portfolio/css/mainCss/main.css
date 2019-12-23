@@ -1,0 +1,611 @@
+@charset "utf-8";
+
+/*공통*/
+.txtBox{
+	background: #fff;
+	width: 600px;
+	display: inline-block;
+	position: relative;
+	padding: 120px 0;
+}
+
+.intro .txtBox{
+	padding: 300px 0;
+}
+.about .txtBox{
+	padding: 90px 0;
+}
+
+.menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+/*menulnb*/
+.section{
+		position: relative;
+}
+.mlnb{
+	background: rgba(0,0,0,1);
+	width: 0;
+	height: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow: hidden;
+	transition: width 1s;
+	padding: 80px 0;
+}
+.mlnb li{
+	text-align:center;
+	line-height: 85px;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 500;
+}
+.mlnb li:first-child{
+	font-size: 40px;
+	text-align: right;
+	padding-right: 100px;
+}
+.mlnb li i{
+	cursor: pointer;
+}
+.mlnb li a:after{
+	content: "";
+	max-width: 0;
+	height: 8px;
+	display: block;
+	background: rgba(255,255,32,0.6);
+	transition: max-width 0.5s;
+	margin:0 auto;
+}
+.mlnb li:first-child:after{
+	display: none;
+}
+.mlnb li:hover a:after{
+	max-width: 215px;
+}
+.mlnb li a{
+	color: #fff;
+}
+
+.pageName{
+	position: absolute;
+	top: 37px;
+	left: 192px;
+	font-size: 15px;
+	font-weight: bold;
+}
+pageName span{
+	vertical-align: middle;
+}
+.pageName:after{
+	content: "";
+	height: 1px;
+	width: 60px;
+	background: #333;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+
+.logo{
+	width: 15px;
+	height: 93px;
+	position: absolute;
+	top: 109px;
+	left: 13px;
+}
+
+.introTxt{
+	/*width: 357px;*/
+	position: absolute;
+	top: 50%;
+	margin-top: -153px; 
+	left: 278px;
+}
+.introTxt dt{	
+	font-size: 60px;
+	line-height: 80px;
+	font-weight: 900;
+}
+.introTxt dd{
+	font-size: 23px;
+	font-weight: 400;
+}
+.introTxt dd span{
+	font-weight: 600;
+}
+
+.inner{
+	position: relative;
+}
+.Btn{
+	cursor: pointer;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 1;
+}
+.Btn i{
+	font-size: 50px;
+}
+
+
+#section1 .txtBox, #section2 .txtBox, #section3 .txtBox, #section4 .txtBox, #section5 .txtBox{
+	background: rgba(102,112,103,0.2);
+}
+
+/***Intro***/
+#section0{
+	background: url(../../images/introBg.png) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+}
+
+/***About***/
+#section1{
+	background: #f9ecd8;
+	width: 100%;
+}
+
+/**좌측메뉴**/
+.aboutL{
+	float: left;
+}
+.aboutTxt{
+	text-align: center;
+}
+
+.aboutPhoto{
+	background: url(../../images/profilePhoto.png) no-repeat center center;
+	background-size: cover;
+	width: 334px;
+	height: 334px;
+	text-indent: -9999px;
+	margin: 0 auto;
+}
+
+.aboutIntro{
+	width: 490px;
+	line-height: 34px;
+	margin: 30px auto;
+	font-family: 'NanumSquare', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+}
+.aboutIntro span{
+	font-size: 22px;
+	font-weight: 900;
+}
+
+.nameSign{
+	text-align: right;
+	margin-right: 13px;
+}
+.name{
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: 600
+}
+.sign{
+	vertical-align: middle;
+}
+
+/**우측메뉴**/
+.aboutR{
+	float: right;
+	margin: 0 auto;
+	line-height: 35px;
+	padding: 78px 0;
+}
+
+.aboutR dt{
+	font-size: 25px;
+	font-family: 'tmonmonsori', sans-serif;
+	padding-bottom: 5px;
+}
+.aboutR dd{
+	font-size: 20px;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+.aboutR dd:last-child{
+	padding-bottom: 0;
+}
+.aboutR dd span{
+	font-size: 22px;
+	font-weight: 500;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.aboutR dd p{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/***Portfolio 공통***/
+/**좌측메뉴**/
+.portL{
+	float: left;
+}
+
+.portTxt{
+	text-align: left;
+	margin-left: 279px;
+	padding: 35px 0;
+}
+.portTxt p{
+	font-size: 20px;
+	font-weight: 700;
+}
+.portTxt h2{
+	font-size: 60px;
+	font-weight: 900;
+}
+.portTxt h3{
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.mainPage{
+	background: url(../../images/main01.png) no-repeat center center;
+	background: url(../../images/main01.png) no-repeat center center;
+	background-size: cover;
+	width: 421px;
+	height: 244px;
+	margin: 0 auto;
+	text-indent: -9999px;
+}
+/**모바일 뷰버튼**/
+.portL .txtBox{
+	position: relative;
+}
+.mViewBtn{
+	background: url(../../images/goOff.png) no-repeat center center;
+	background-size: cover;
+	width: 80px; 
+	height: 68px;
+	position: absolute;
+	top: 130px;
+	right: 0px;
+}
+.mViewBtn a{
+	font-size: 0;
+	display: block;
+	width: 80px;
+	height: 68px;
+}
+.mViewBtn:hover{
+	background: url(../../images/goOn.png) no-repeat center center;
+	background-size: cover;
+	width: 80px; 
+	height: 68px;
+	position: absolute;
+	top: 130px;
+	right: 0px;
+	text-indent: -9999px;
+}
+/**모바일 뷰버튼**/
+
+
+/**우측메뉴**/
+.portR{
+	float: right;
+	width: 535px;
+	margin: 0 auto;
+	line-height: 42px;
+}
+.portR dt{
+	width: 135px;
+	font-size: 25px;
+	font-family: 'tmonmonsori', sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 15px;
+}
+.portR dt:last-child{
+	margin-bottom: 0;
+}
+.portR .firstTit{
+	width: 100%;
+	display: block;
+	margin-bottom: 0;
+}
+.portR .lastTit{
+	margin-bottom: 0;
+}
+.portR dd{
+	width: 300px;
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 15px;
+}
+
+.portR .firstTxt{
+	display: block;
+	width: 100%;
+}
+.portR .lastTxt{
+	margin-bottom: 0;
+}
+
+/**뷰버튼**/
+
+.viewBtnOn{
+	background: url(../../images/viewBtn.png) no-repeat center center;
+	width: 273px;
+	height: 69px;
+	margin: 0 35px
+}
+.viewBtnOn a{
+	display: block;
+	width: 273px;
+	height: 69px;
+	text-indent: -9999px;
+}
+.viewBtnOn:hover{
+	background: url(../../images/viewBtnHover.png) no-repeat center center;
+}
+
+
+
+/***Portfolio01***/
+#section2{
+	background: #80abbc;
+	width: 100%;
+
+}
+.portfolio01 .viewBtnOn{
+	padding: 105px 0;
+}
+
+/***Portfolio02***/
+#section3{
+	background: #f1e4b1;
+	width: 100%;
+
+}
+/**좌측메뉴**/
+.portfolio02 .mainPage{
+	background: url(../../images/main02.png) no-repeat center center;
+	height: 230px;
+}
+.portfolio02 .portTxt{
+
+}
+
+/**우측메뉴**/
+.portfolio02 .viewBtnOn{
+	padding: 185px 0;
+} 
+
+/***Portfolio03***/
+#section4{
+	background: #fb9da3;
+	width: 100%;
+	padding: 51px 0;
+}
+/**좌측메뉴**/
+.portfolio03 .mainPage{
+	background: url(../../images/hollysMain.png) no-repeat center center;
+	width: 449px;
+	height: 196px;
+
+}
+.portfolio03 .txtBox{
+	padding: 140px 0;
+}
+.portfolio03 .portTxt{
+	padding-bottom: 50px; 
+}
+
+/**우측메뉴**/
+.portfolio03 .portR .lastTit{
+	vertical-align: top;
+}
+.portfolio03 .portR .lastTxt{
+	width: 260px;
+	vertical-align: top;
+}
+
+.portfolio03 .viewBtnOn{
+	padding:152px 0;
+} 
+
+
+/***Portfolio05***/
+#section5{
+	background: #7accc8;
+	width: 100%;
+
+}
+/**좌측메뉴**/
+.portfolio04 .mainPage{
+	background: url(../../images/hansolMain.png) no-repeat center center;
+	width: 450px;
+	height: 179px;
+
+}
+.portfolio04 .txtBox{
+	background: rgba(0,0,0,0.2);
+}
+
+
+/**우측메뉴**/
+.portfolio04 .portR .lastTit{
+	vertical-align: top;
+}
+.portfolio04 .portR .lastTxt{
+	width: 260px;
+	vertical-align: top;
+}
+
+.portfolio04 .viewBtnOn{
+	padding: 161px 0;
+} 
+
+/***Portfolio05***/
+#section6{
+	background: #b7d8cf;
+	width: 100%;
+
+}
+/**좌측메뉴**/
+.portfolio05 .mainPage{
+	background: url(../../images/main04.png) no-repeat center center;
+	width: 231px;
+	height: 284px;
+	
+}
+
+.portfolio05 .txtBox{
+	background: rgba(0,0,0,0.2);
+	padding: 90px 0;
+}
+
+/**우측메뉴**/
+
+.portfolio05 .portR .thirdTit{
+	vertical-align: top;
+}
+.portfolio05 .portR .thirdTxt{
+	width: 260px;
+	vertical-align: top;
+}
+
+.portfolio05 .viewBtnOn{
+	padding: 162px 0;
+} 
+
+/***Contact***/
+#section7{
+	background: #d5c4c4;
+	padding: 30px 0;
+}
+.contact .inner{
+	position: relative;
+}
+.contact .portTxt h2{
+	line-height: 65px;
+}
+
+.portTxt img{
+	width: 23px;
+	vertical-align: middle;
+}
+.portTxt span{
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 600;
+	margin-left: 10px;
+}
+.contact .logo{
+	position: absolute;
+	top: 109px;
+	left: 13px;
+}
+.contact .mail{
+	position: absolute;
+	left: 13px;
+	bottom: 13px;
+}
+
+.portTxt h2{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contact .portTxt h3{
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 30px 0;
+	}
+
+.cInfo{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+.cInfo li{
+	position: relative;
+}
+.cInfo li span{
+	cursor: pointer;
+}
+/*.triangle{
+	display: inline-block;
+	width: 0;
+	height: 0px;
+	border-top: 50px solid transparent;
+	border-right: 50px solid #fff;
+	border-left: 50px solid f;
+	border-bottom: 50px solid transparent;
+	text-indent: -9999px;
+	vertical-align: middle;
+}*/
+
+.contact .txtBox{
+	background: none;
+	width: 100%;
+	height: auto;
+}
+
+.contact .cTxtBox{
+	width: 440px;
+	text-align: left;
+	line-height: 30px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.cTxtBox p{
+	font-size: 18px;
+	font-weight: 300;
+}
+.cTxtBox span{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+.contact .portTxt span {
+	vertical-align: top;
+}
+/*.cInfo .copyBtn01{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	right: -50px;
+	cursor: pointer;
+	width: 40px;
+}
+.cInfo .copyBtn02{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	right: -50px;
+	cursor: pointer;
+	width: 40px;
+}
+
+.cInfo .copyBtn03{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	right: -50px;
+	cursor: pointer;
+	width: 40px;
+}*/
+
+
+
+
